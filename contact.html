@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Terra Microscape Studio. Questions about orders, shipping, or custom design? We're here to help.">
+  <title>Contact Us | Terra Microscape Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">Terra Microscape</a>
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="custom.html">Custom</a></li>
+        <li><a href="care.html">Care Guide</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <div class="cart-icon" aria-label="Shopping cart"></div>
+        <button class="nav-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Drawer -->
+  <div class="nav-overlay"></div>
+  <div class="nav-drawer">
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="custom.html">Custom</a>
+    <a href="care.html">Care Guide</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="container">
+      <h1>Get in Touch</h1>
+      <p>We'd love to hear from you. Questions, feedback, or just saying hello?</p>
+    </div>
+  </header>
+
+  <!-- Contact Information -->
+  <section class="benefits">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; text-align: center; margin-bottom: 4rem;">
+        <div>
+          <div style="font-size: 2rem; margin-bottom: 1rem;">✉️</div>
+          <h3 style="color: var(--color-primary); margin-bottom: 0.5rem;">Email</h3>
+          <p><a href="mailto:hello@terramicroscape.com" style="color: var(--color-accent); font-weight: 500;">hello@terramicroscape.com</a></p>
+        </div>
+        <div>
+          <div style="font-size: 2rem; margin-bottom: 1rem;">🕐</div>
+          <h3 style="color: var(--color-primary); margin-bottom: 0.5rem;">Hours</h3>
+          <p>Monday – Friday<br>9am – 6pm EST</p>
+        </div>
+        <div>
+          <div style="font-size: 2rem; margin-bottom: 1rem;">📱</div>
+          <h3 style="color: var(--color-primary); margin-bottom: 0.5rem;">Social</h3>
+          <div class="social-links" style="justify-content: center; margin-top: 0.5rem;">
+            <a href="#" aria-label="Instagram">IG</a>
+            <a href="#" aria-label="Pinterest">PI</a>
+            <a href="#" aria-label="TikTok">TT</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shipping & Returns Policy -->
+  <section class="bestsellers">
+    <div class="container">
+      <div class="section-header">
+        <h2>Shipping & Returns</h2>
+      </div>
+      <div class="scenario-grid" style="margin-bottom: 0;">
+        <div class="scenario-card" style="text-align: left;">
+          <h3 style="margin-bottom: 1rem;">🚚 Shipping</h3>
+          <p style="margin-bottom: 0;">We ship to the US and Canada. Orders are carefully packed with eco-friendly materials and typically depart within 2-3 business days. Tracking information is provided via email once your order ships.</p>
+        </div>
+        <div class="scenario-card" style="text-align: left;">
+          <h3 style="margin-bottom: 1rem;">↩️ Returns</h3>
+          <p style="margin-bottom: 0;">We accept returns within 14 days of delivery. Items must be in original condition. Contact us to initiate a return, and we'll provide a prepaid shipping label.</p>
+        </div>
+        <div class="scenario-card" style="text-align: left;">
+          <h3 style="margin-bottom: 1rem;">🛡️ Guarantee</h3>
+          <p style="margin-bottom: 0;">All terrariums come with a 6-month quality guarantee. If your ecosystem arrives damaged or fails to thrive under proper care, we'll replace it at no cost.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section class="benefits">
+    <div class="container">
+      <div class="section-header">
+        <h2>Send Us a Message</h2>
+        <p>Fill out the form below and we'll get back to you within 24 hours.</p>
+      </div>
+      <div class="form-section" style="max-width: 600px;">
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="How can we help you?" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Summary -->
+  <section class="bestsellers">
+    <div class="container">
+      <div class="section-header">
+        <h2>Quick Answers</h2>
+        <p>Common questions by category.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem;">
+        <!-- Ordering -->
+        <div>
+          <h3 style="color: var(--color-primary); margin-bottom: 1.5rem; text-align: center; font-size: 1.1rem;">Ordering</h3>
+          <details style="margin-bottom: 1rem; background: var(--color-bg); border-radius: 8px; overflow: hidden;">
+            <summary style="padding: 1rem; cursor: pointer; font-weight: 500; font-size: 0.9rem; list-style: none;">How long to process?</summary>
+            <div style="padding: 0 1rem 1rem; font-size: 0.85rem; color: var(--color-text-light);">
+              <p>Orders typically ship within 2-3 business days. You'll receive a confirmation email with tracking once your terrarium is on its way.</p>
+            </div>
+          </details>
+          <details style="background: var(--color-bg); border-radius: 8px; overflow: hidden;">
+            <summary style="padding: 1rem; cursor: pointer; font-weight: 500; font-size: 0.9rem; list-style: none;">Can I modify order?</summary>
+            <div style="padding: 0 1rem 1rem; font-size: 0.85rem; color: var(--color-text-light);">
+              <p>Contact us within 24 hours of placing your order. We'll do our best to accommodate changes before production begins.</p>
+            </div>
+          </details>
+        </div>
+        <!-- Shipping -->
+        <div>
+          <h3 style="color: var(--color-primary); margin-bottom: 1.5rem; text-align: center; font-size: 1.1rem;">Shipping</h3>
+          <details style="margin-bottom: 1rem; background: var(--color-bg); border-radius: 8px; overflow: hidden;">
+            <summary style="padding: 1rem; cursor: pointer; font-weight: 500; font-size: 0.9rem; list-style: none;">Where do you ship?</summary>
+            <div style="padding: 0 1rem 1rem; font-size: 0.85rem; color: var(--color-text-light);">
+              <p>We currently ship to all 50 US states and Canada. International shipping may be available—contact us to inquire.</p>
+            </div>
+          </details>
+          <details style="background: var(--color-bg); border-radius: 8px; overflow: hidden;">
+            <summary style="padding: 1rem; cursor: pointer; font-weight: 500; font-size: 0.9rem; list-style: none;">Is packaging eco-friendly?</summary>
+            <div style="padding: 0 1rem 1rem; font-size: 0.85rem; color: var(--color-text-light);">
+              <p>Yes! All our packaging is 100% recyclable—paper cushioning, cardboard boxes, and no plastic wrap.</p>
+            </div>
+          </details>
+        </div>
+        <!-- Care -->
+        <div>
+          <h3 style="color: var(--color-primary); margin-bottom: 1.5rem; text-align: center; font-size: 1.1rem;">Care</h3>
+          <details style="margin-bottom: 1rem; background: var(--color-bg); border-radius: 8px; overflow: hidden;">
+            <summary style="padding: 1rem; cursor: pointer; font-weight: 500; font-size: 0.9rem; list-style: none;">Need replacement plants?</summary>
+            <div style="padding: 0 1rem 1rem; font-size: 0.85rem; color: var(--color-text-light);">
+              <p>If your plants fail to thrive within 6 months under proper care, contact us for a replacement or repair options.</p>
+            </div>
+          </details>
+          <details style="background: var(--color-bg); border-radius: 8px; overflow: hidden;">
+            <summary style="padding: 1rem; cursor: pointer; font-weight: 500; font-size: 0.9rem; list-style: none;">What if mold appears?</summary>
+            <div style="padding: 0 1rem 1rem; font-size: 0.85rem; color: var(--color-text-light);">
+              <p>Mold is usually harmless. Wipe it away with a damp cloth and ensure your terrarium gets adequate indirect light.</p>
+            </div>
+          </details>
+        </div>
+        <!-- Custom -->
+        <div>
+          <h3 style="color: var(--color-primary); margin-bottom: 1.5rem; text-align: center; font-size: 1.1rem;">Custom</h3>
+          <details style="margin-bottom: 1rem; background: var(--color-bg); border-radius: 8px; overflow: hidden;">
+            <summary style="padding: 1rem; cursor: pointer; font-weight: 500; font-size: 0.9rem; list-style: none;">How long does custom take?</summary>
+            <div style="padding: 0 1rem 1rem; font-size: 0.85rem; color: var(--color-text-light);">
+              <p>Custom terrariums typically take 2-3 weeks from consultation to delivery, depending on complexity and availability.</p>
+            </div>
+          </details>
+          <details style="background: var(--color-bg); border-radius: 8px; overflow: hidden;">
+            <summary style="padding: 1rem; cursor: pointer; font-weight: 500; font-size: 0.9rem; list-style: none;">What's the minimum budget?</summary>
+            <div style="padding: 0 1rem 1rem; font-size: 0.85rem; color: var(--color-text-light);">
+              <p>Custom designs start at $100. Most projects fall between $150-$300 depending on size and plant selection.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bottom CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Ready to Bring Nature Home?</h2>
+      <p>Explore our collection or create something uniquely yours.</p>
+      <div class="cta-buttons">
+        <a href="shop.html" class="btn btn-primary">Shop All</a>
+        <a href="custom.html" class="btn btn-outline">Custom Design</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <p class="footer-logo">Terra Microscape</p>
+          <p class="footer-description">Handcrafted closed terrariums for the modern workspace. Bringing the serenity of nature to your desk, one tiny forest at a time.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="custom.html">Custom</a></li>
+            <li><a href="care.html">Care Guide</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Connect</h4>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram">IG</a>
+            <a href="#" aria-label="Pinterest">PI</a>
+            <a href="#" aria-label="TikTok">TT</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Terra Microscape Studio. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const form = document.getElementById('contactForm');
+      if (form) {
+        form.addEventListener('submit', function(e) {
+          e.preventDefault();
+          alert('Message sent!');
+          form.reset();
+        });
+      }
+    });
+  </script>
+</body>
+</html>

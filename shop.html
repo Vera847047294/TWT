@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Shop our collection of handcrafted closed terrariums. Find the perfect self-sustaining ecosystem for your space.">
+  <title>Shop | Terra Microscape Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">Terra Microscape</a>
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="custom.html">Custom</a></li>
+        <li><a href="care.html">Care Guide</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <div class="cart-icon" aria-label="Shopping cart"></div>
+        <button class="nav-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Drawer -->
+  <div class="nav-overlay"></div>
+  <div class="nav-drawer">
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="custom.html">Custom</a>
+    <a href="care.html">Care Guide</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="container">
+      <h1>Our Collection</h1>
+      <p>Handcrafted closed terrariums, each one a living miniature ecosystem.</p>
+    </div>
+  </header>
+
+  <!-- Filter Bar -->
+  <div class="filter-bar">
+    <div class="container">
+      <div class="filter-group">
+        <p class="filter-label">Price</p>
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all" data-type="price">All</button>
+          <button class="filter-btn" data-filter="starter" data-type="price">Starter</button>
+          <button class="filter-btn" data-filter="advanced" data-type="price">Advanced</button>
+          <button class="filter-btn" data-filter="premium" data-type="price">Premium</button>
+        </div>
+      </div>
+      <div class="filter-group">
+        <p class="filter-label">Style</p>
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all" data-type="style">All</button>
+          <button class="filter-btn" data-filter="forest" data-type="style">Forest</button>
+          <button class="filter-btn" data-filter="rainforest" data-type="style">Rainforest</button>
+          <button class="filter-btn" data-filter="desert" data-type="style">Desert</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product Grid -->
+  <section class="shop-products">
+    <div class="container">
+      <div class="products-grid">
+        <!-- Starter Forest -->
+        <div class="product-card" data-price="starter" data-style="forest">
+          <img src="https://placehold.co/400x300/2d4a22/eceee7?text=Moss+Haven" alt="Moss Haven terrarium with lush green moss">
+          <div class="product-info">
+            <span class="product-name">Moss Haven</span>
+            <div class="product-meta">
+              <span class="product-dimensions">5" × 5"</span>
+              <span class="product-price">$49</span>
+            </div>
+            <span class="care-badge easy">Easy</span>
+            <p class="product-benefit">Thrives in low light</p>
+            <button class="btn btn-primary">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Advanced Forest -->
+        <div class="product-card" data-price="advanced" data-style="forest">
+          <img src="https://placehold.co/400x300/2d4a22/eceee7?text=Fern+Valley" alt="Fern Valley terrarium with delicate ferns">
+          <div class="product-info">
+            <span class="product-name">Fern Valley</span>
+            <div class="product-meta">
+              <span class="product-dimensions">6" × 7"</span>
+              <span class="product-price">$72</span>
+            </div>
+            <span class="care-badge moderate">Moderate</span>
+            <p class="product-benefit">Loves humidity</p>
+            <button class="btn btn-primary">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Premium Forest -->
+        <div class="product-card" data-price="premium" data-style="forest">
+          <img src="https://placehold.co/400x300/2d4a22/eceee7?text=Ancient+Grove" alt="Ancient Grove premium terrarium">
+          <div class="product-info">
+            <span class="product-name">Ancient Grove</span>
+            <div class="product-meta">
+              <span class="product-dimensions">8" × 9"</span>
+              <span class="product-price">$125</span>
+            </div>
+            <span class="care-badge moderate">Moderate</span>
+            <p class="product-benefit">Rare moss varieties</p>
+            <button class="btn btn-primary">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Starter Rainforest -->
+        <div class="product-card" data-price="starter" data-style="rainforest">
+          <img src="https://placehold.co/400x300/2d4a22/eceee7?text=Tropical+Start" alt="Tropical Start beginner rainforest terrarium">
+          <div class="product-info">
+            <span class="product-name">Tropical Start</span>
+            <div class="product-meta">
+              <span class="product-dimensions">5" × 6"</span>
+              <span class="product-price">$55</span>
+            </div>
+            <span class="care-badge easy">Easy</span>
+            <p class="product-benefit">Perfect for beginners</p>
+            <button class="btn btn-primary">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Advanced Rainforest -->
+        <div class="product-card" data-price="advanced" data-style="rainforest">
+          <img src="https://placehold.co/400x300/2d4a22/eceee7?text=Rainforest+Pocket" alt="Rainforest Pocket terrarium">
+          <div class="product-info">
+            <span class="product-name">Rainforest Pocket</span>
+            <div class="product-meta">
+              <span class="product-dimensions">6" × 8"</span>
+              <span class="product-price">$85</span>
+            </div>
+            <span class="care-badge moderate">Moderate</span>
+            <p class="product-benefit">Dense tropical canopy</p>
+            <button class="btn btn-primary">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Premium Rainforest -->
+        <div class="product-card" data-price="premium" data-style="rainforest">
+          <img src="https://placehold.co/400x300/2d4a22/eceee7?text=Canopy+Kingdom" alt="Canopy Kingdom premium rainforest terrarium">
+          <div class="product-info">
+            <span class="product-name">Canopy Kingdom</span>
+            <div class="product-meta">
+              <span class="product-dimensions">8" × 10"</span>
+              <span class="product-price">$145</span>
+            </div>
+            <span class="care-badge moderate">Moderate</span>
+            <p class="product-benefit">Exotic tropical species</p>
+            <button class="btn btn-primary">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Starter Desert -->
+        <div class="product-card" data-price="starter" data-style="desert">
+          <img src="https://placehold.co/400x300/2d4a22/eceee7?text=Desert+Dusk" alt="Desert Dusk terrarium with succulents">
+          <div class="product-info">
+            <span class="product-name">Desert Dusk</span>
+            <div class="product-meta">
+              <span class="product-dimensions">5" × 5"</span>
+              <span class="product-price">$45</span>
+            </div>
+            <span class="care-badge easy">Easy</span>
+            <p class="product-benefit">Loves bright windows</p>
+            <button class="btn btn-primary">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Advanced Desert -->
+        <div class="product-card" data-price="advanced" data-style="desert">
+          <img src="https://placehold.co/400x300/2d4a22/eceee7?text=Sunset+Canyon" alt="Sunset Canyon terrarium">
+          <div class="product-info">
+            <span class="product-name">Sunset Canyon</span>
+            <div class="product-meta">
+              <span class="product-dimensions">6" × 6"</span>
+              <span class="product-price">$68</span>
+            </div>
+            <span class="care-badge easy">Easy</span>
+            <p class="product-benefit">Warm-toned gravel base</p>
+            <button class="btn btn-primary">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Shipping Notice -->
+      <div class="shipping-notice">
+        <p>Free shipping on orders over $50. Orders ship within 2-3 business days.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <p class="footer-logo">Terra Microscape</p>
+          <p class="footer-description">Handcrafted closed terrariums for the modern workspace. Bringing the serenity of nature to your desk, one tiny forest at a time.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="custom.html">Custom</a></li>
+            <li><a href="care.html">Care Guide</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Connect</h4>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram">IG</a>
+            <a href="#" aria-label="Pinterest">PI</a>
+            <a href="#" aria-label="TikTok">TT</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Terra Microscape Studio. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+  <script>
+    // Filter functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      const productCards = document.querySelectorAll('.product-card');
+
+      let activePriceFilter = 'all';
+      let activeStyleFilter = 'all';
+
+      function applyFilters() {
+        productCards.forEach(card => {
+          const priceMatch = activePriceFilter === 'all' || card.dataset.price === activePriceFilter;
+          const styleMatch = activeStyleFilter === 'all' || card.dataset.style === activeStyleFilter;
+
+          if (priceMatch && styleMatch) {
+            card.classList.remove('hidden');
+          } else {
+            card.classList.add('hidden');
+          }
+        });
+      }
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+          const filterType = this.dataset.type;
+          const filterValue = this.dataset.filter;
+
+          // Update active state for this filter group
+          document.querySelectorAll(`.filter-btn[data-type="${filterType}"]`).forEach(b => {
+            b.classList.remove('active');
+          });
+          this.classList.add('active');
+
+          // Update filter values
+          if (filterType === 'price') {
+            activePriceFilter = filterValue;
+          } else if (filterType === 'style') {
+            activeStyleFilter = filterValue;
+          }
+
+          applyFilters();
+        });
+      });
+    });
+  </script>
+</body>
+</html>
