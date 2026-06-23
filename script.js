@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function () {
     button.addEventListener('click', function (e) {
       e.preventDefault();
       const productName = this.closest('.product-card').querySelector('.product-name').textContent;
-      alert('Added to cart!');
+      alert('"' + productName + '" added to cart!');
     });
   });
 
@@ -99,33 +99,124 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  // Intersection Observer for fade-in animations
+  // Intersection Observer for fade-up animations
   const observerOptions = {
     threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
+    rootMargin: '0px 0px -60px 0px'
   };
 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        entry.target.style.opacity = '1';
-        entry.target.style.transform = 'translateY(0)';
+        entry.target.classList.add('visible');
       }
     });
   }, observerOptions);
 
-  // Observe sections for animation
-  document.querySelectorAll('section').forEach(section => {
-    section.style.opacity = '0';
-    section.style.transform = 'translateY(20px)';
-    section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+  // Observe sections with fade-up class
+  document.querySelectorAll('.fade-up').forEach(section => {
     observer.observe(section);
   });
 
-  // Hero section should be visible immediately
-  const hero = document.querySelector('.hero');
-  if (hero) {
-    hero.style.opacity = '1';
-    hero.style.transform = 'translateY(0)';
+  // Mouse-tracking glow effect for Hero buttons (desktop only)
+  function initMouseTrackingGlow() {
+    if (window.innerWidth < 768) return;
+
+    const heroButtons = document.querySelectorAll('.hero-buttons .btn');
+
+    heroButtons.forEach(button => {
+      // Create glow element
+      const glow = document.createElement('span');
+      glow.className = 'glow';
+      button.appendChild(glow);
+
+      button.addEventListener('mousemove', function(e) {
+        const rect = this.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        
+        glow.style.left = x + 'px';
+        glow.style.top = y + 'px';
+        glow.style.width = '300px';
+        glow.style.height = '300px';
+      });
+
+      button.addEventListener('mouseleave', function() {
+        glow.style.width = '0';
+        glow.style.height = '0';
+      });
+    });
+  }
+
+  // Initialize mouse tracking on load and on resize
+  initMouseTrackingGlow();
+  window.addEventListener('resize', initMouseTrackingGlow);
+
+  // Newsletter form submission
+  const newsletterForm = document.querySelector('.newsletter-form');
+  if (newsletterForm) {
+    newsletterForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const emailInput = this.querySelector('.newsletter-input');
+      if (emailInput.value) {
+        alert('Thank you for subscribing!');
+        emailInput.value = '';
+      }
+    });
+  }
+
+  // FAQ accordion functionality
+  const faqQuestions = document.querySelectorAll('.faq-question');
+  faqQuestions.forEach(question => {
+    question.addEventListener('click', function() {
+      this.classList.toggle('active');
+      const answer = this.nextElementSibling;
+      answer.classList.toggle('active');
+    });
+  });
+
+  // Filter buttons for shop page
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  const productCards = document.querySelectorAll('.product-card');
+
+  filterButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      // Remove active class from all buttons
+      filterButtons.forEach(btn => btn.classList.remove('active'));
+      
+      // Add active class to clicked button
+      this.classList.add('active');
+
+      const category = this.getAttribute('data-category');
+
+      // Show/hide products based on category
+      productCards.forEach(card => {
+        if (category === 'all' || card.classList.contains(category)) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    });
+  });
+
+  // Custom form submission
+  const customForm = document.querySelector('.custom-inquiry-form');
+  if (customForm) {
+    customForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Thank you for your inquiry! We will get back to you within 2 business days.');
+      this.reset();
+    });
+  }
+
+  // Contact form submission
+  const contactForm = document.querySelector('.contact-form');
+  if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Thank you for contacting us! We will respond within 24 hours.');
+      this.reset();
+    });
   }
 });
