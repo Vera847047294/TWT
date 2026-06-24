@@ -149,7 +149,6 @@ p {
 .nav-menu {
   display: flex;
   align-items: center;
-  gap: 2.5rem;
 }
 
 .nav-menu a {
@@ -158,6 +157,7 @@ p {
   color: var(--color-text);
   position: relative;
   transition: color var(--transition);
+  padding: 0 1rem;
 }
 
 .nav-menu a::after {
@@ -324,8 +324,9 @@ p {
 }
 
 .btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 12px 35px rgba(45, 74, 34, 0.2);
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 15px 35px rgba(45, 74, 34, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .btn:hover::before {
@@ -401,6 +402,7 @@ p {
   width: 60%;
   height: 80%;
   background: radial-gradient(circle, rgba(45, 74, 34, 0.18) 0%, transparent 70%);
+  animation: breathe 4s infinite ease-in-out;
 }
 
 .hero::after {
@@ -409,6 +411,12 @@ p {
   width: 50%;
   height: 70%;
   background: radial-gradient(circle, rgba(139, 111, 78, 0.15) 0%, transparent 70%);
+}
+
+/* Breathing animation */
+@keyframes breathe {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.03); }
 }
 
 .hero-inner {
@@ -1086,6 +1094,10 @@ section {
     display: block;
   }
 
+  .hero {
+    background-attachment: scroll;
+  }
+
   section {
     padding: 4rem 0;
   }
@@ -1373,6 +1385,16 @@ section {
   gap: 2rem;
 }
 
+/* Masonry layout for desktop */
+@media (min-width: 1024px) {
+  .projects-grid .project-card:nth-child(odd) {
+    grid-column: span 2;
+  }
+  .projects-grid .project-card:nth-child(even) {
+    grid-column: span 1;
+  }
+}
+
 .project-card {
   background: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(12px);
@@ -1380,6 +1402,7 @@ section {
   overflow: hidden;
   border: 1px solid rgba(45, 74, 34, 0.08);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
+  position: relative;
 }
 
 .project-card:hover {
@@ -1391,6 +1414,32 @@ section {
   width: 100%;
   height: 280px;
   object-fit: cover;
+}
+
+.project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-card:hover .project-overlay {
+  opacity: 1;
+}
+
+.project-overlay h4 {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  color: var(--color-secondary);
+  text-align: center;
+  padding: 1rem;
 }
 
 .project-caption {
