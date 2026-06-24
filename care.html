@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Care guide for your Terra Microscape terrarium. Learn how to keep your closed ecosystem thriving.">
-  <title>Care Guide | Terra Microscape Studio</title>
+  <title>Terra Microscape Studio | Desktop Closed Terrariums</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -55,11 +55,59 @@
     <div class="container">
       <div class="section-header">
         <h2>How Your Terrarium Works</h2>
-        <p>A closed terrarium is a self-sustaining world in a jar.</p>
+        <p>An ecosystem is a self-sustaining world in a jar.</p>
       </div>
       <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; max-width: 900px; margin: 0 auto;">
         <div>
-          <img src="https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=600&h=400&fit=crop" alt="Closed moss terrarium showing self-sustaining ecosystem water cycle" style="border-radius: 8px;">
+          <svg width="400" height="500" viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+            <!-- Glass jar outline -->
+            <rect x="60" y="80" width="280" height="400" rx="10" ry="10" fill="none" stroke="#2d4a22" stroke-width="3"/>
+            <ellipse cx="200" cy="80" rx="140" ry="20" fill="none" stroke="#2d4a22" stroke-width="3"/>
+            
+            <!-- Gravel layer -->
+            <rect x="60" y="420" width="280" height="60" fill="#8b7355"/>
+            <text x="200" y="455" text-anchor="middle" fill="#2d4a22" font-size="14" font-weight="600">Gravel</text>
+            
+            <!-- Activated charcoal layer -->
+            <rect x="60" y="395" width="280" height="25" fill="#3d3d3d"/>
+            <text x="200" y="412" text-anchor="middle" fill="#eceee7" font-size="12" font-weight="600">Activated Charcoal</text>
+            
+            <!-- Soil layer -->
+            <rect x="60" y="280" width="280" height="115" fill="#c5a48a"/>
+            <text x="200" y="335" text-anchor="middle" fill="#2d4a22" font-size="14" font-weight="600">Soil & Substrate</text>
+            
+            <!-- Plants -->
+            <path d="M120 280 Q115 200 130 180 Q145 160 135 200 Q125 240 120 280" fill="#2d4a22"/>
+            <path d="M200 280 Q195 150 210 120 Q225 90 215 150 Q205 210 200 280" fill="#2d4a22"/>
+            <path d="M280 280 Q275 220 290 200 Q305 180 295 220 Q285 260 280 280" fill="#2d4a22"/>
+            
+            <!-- Water condensation arrows -->
+            <path d="M100 150 Q80 120 100 90" stroke="#5a9bd4" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+            <path d="M200 150 Q200 100 200 70" stroke="#5a9bd4" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+            <path d="M300 150 Q320 120 300 90" stroke="#5a9bd4" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+            
+            <!-- Water drip arrows -->
+            <path d="M100 90 Q80 120 100 160" stroke="#5a9bd4" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+            <path d="M200 70 Q200 120 200 170" stroke="#5a9bd4" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+            <path d="M300 90 Q320 120 300 160" stroke="#5a9bd4" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+            
+            <!-- Oxygen cycle arrows -->
+            <path d="M80 200 Q60 180 80 160" stroke="#2d4a22" stroke-width="2" fill="none" stroke-dasharray="5,3"/>
+            <path d="M320 200 Q340 180 320 160" stroke="#2d4a22" stroke-width="2" fill="none" stroke-dasharray="5,3"/>
+            
+            <!-- Arrowhead marker -->
+            <defs>
+              <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+                <polygon points="0 0, 10 3.5, 0 7" fill="#5a9bd4"/>
+              </marker>
+            </defs>
+            
+            <!-- Labels -->
+            <text x="50" y="120" fill="#5a9bd4" font-size="12">Condensation</text>
+            <text x="50" y="180" fill="#5a9bd4" font-size="12">Water Cycle</text>
+            <text x="320" y="120" fill="#2d4a22" font-size="12">Oxygen</text>
+            <text x="320" y="180" fill="#2d4a22" font-size="12">CO2</text>
+          </svg>
         </div>
         <div>
           <h3 style="color: var(--color-primary); margin-bottom: 1rem;">The Water Cycle</h3>
@@ -193,6 +241,24 @@
           <summary style="padding: 1.25rem; cursor: pointer; font-weight: 600; color: var(--color-primary); list-style: none;">What if an insect gets inside?</summary>
           <div style="padding: 0 1.25rem 1.25rem; color: var(--color-text-light);">
             <p>Small insects like fungus gnats are usually harmless and may even benefit your terrarium by aerating the soil. If a larger pest appears, carefully remove it and check the seal. The closed environment naturally limits what can survive inside.</p>
+          </div>
+        </details>
+        <details style="margin-bottom: 1rem; background: var(--color-white); border-radius: 8px; overflow: hidden;">
+          <summary style="padding: 1.25rem; cursor: pointer; font-weight: 600; color: var(--color-primary); list-style: none;">Can I place my terrarium near a window?</summary>
+          <div style="padding: 0 1.25rem 1.25rem; color: var(--color-text-light);">
+            <p>Yes, but avoid direct sunlight which can overheat the jar. Bright, indirect light is ideal. East or north-facing windows work perfectly.</p>
+          </div>
+        </details>
+        <details style="margin-bottom: 1rem; background: var(--color-white); border-radius: 8px; overflow: hidden;">
+          <summary style="padding: 1.25rem; cursor: pointer; font-weight: 600; color: var(--color-primary); list-style: none;">What happens if condensation stops forming?</summary>
+          <div style="padding: 0 1.25rem 1.25rem; color: var(--color-text-light);">
+            <p>This may indicate low humidity. Mist lightly with distilled water and reseal the jar. If this persists, check if the seal is compromised.</p>
+          </div>
+        </details>
+        <details style="margin-bottom: 1rem; background: var(--color-white); border-radius: 8px; overflow: hidden;">
+          <summary style="padding: 1.25rem; cursor: pointer; font-weight: 600; color: var(--color-primary); list-style: none;">Do I need to add fertilizer?</summary>
+          <div style="padding: 0 1.25rem 1.25rem; color: var(--color-text-light);">
+            <p>No, closed terrariums create their own nutrients through decomposition. Adding fertilizer would upset the delicate balance and can cause algae growth.</p>
           </div>
         </details>
       </div>
